@@ -1,7 +1,7 @@
 {
-  "name": "vue-ssr",
+  "name": "multi-ssr",
   "version": "1.0.0",
-  "description": "Vue.js & Vue-Server-Renderer",
+  "description": "Testing SSR for multi sites",
   "scripts": {
     "dev": "node server.js",
     "start": "cross-env NODE_ENV=production node server",
