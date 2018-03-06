@@ -4,8 +4,8 @@ import Router from 'vue-router'
 Vue.use(Router)
 
 // route-level code splitting
-import Home from '../pages/index.vue'
-import About from '../pages/about.vue'
+import Home from './pages/index.vue'
+import About from './pages/about.vue'
 
 export function createRouter () {
   return new Router({

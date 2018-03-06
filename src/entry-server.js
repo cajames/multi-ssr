@@ -1,8 +1,13 @@
-import { createApp } from './app'
+import { createApp as createApp1 } from './site1/app'
+import { createApp as createApp2 } from './site2/app'
 
 export default (context) => {
+  console.log(context)
 	// Return a new Promise here
 	return new Promise((resolve, reject) => {
+
+    const createApp = (context.hostname.indexOf('site1') >= 0 ? createApp1 : createApp2)
+
 		const { app, router, store } = createApp(context)
 
 		router.push(context.url)

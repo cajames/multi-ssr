@@ -49,7 +49,7 @@ app.use('/public', express.static('./public'))
 async function render (req, res) {
   res.setHeader('Content-Type', 'text/html')
   try {
-		const html = await renderer.renderToString({ url: req.url })
+		const html = await renderer.renderToString({ url: req.url, hostname: req.hostname })
     res.send(html)
 	} catch (err) {
 		if (err.url) {
