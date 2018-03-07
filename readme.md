@@ -6,6 +6,11 @@ Depending on the origin of the request (hostname) the SSR node will return a dif
 
 In the same way based on the configuration passed down, the client should only download the relevant webpack chunk for it's respective website.
 
+## Try it out
+
+- https://multi-ssr-site1.now.sh
+- https://multi-ssr-site2.now.sh
+
 Upgrades:
 
 - [ ] Right now any new templates need the whole project to be built, bundled and then redeployed out to be made active. Would be cool to find a way to not have to re-deploy for new templates
